@@ -1,0 +1,15 @@
+server:
+  port: 11000
+  
+spring:
+  application:
+    name: weather-server
+  cloud: 
+    config:
+      uri: http://localhost:8888/
+      profile: weather1
+      
+eureka:
+  client:  
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka/  
